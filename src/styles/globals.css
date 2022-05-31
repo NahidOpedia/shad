@@ -1,0 +1,116 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+* {
+	box-sizing: border-box;
+}
+.scrollbar-hidden::-webkit-scrollbar {
+	display: none;
+}
+
+.scrollbar-hidden {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.scrollbar-hidden:hover::-webkit-scrollbar {
+	display: none;
+	height: 5px;
+	cursor: pointer;
+	width: 5px;
+}
+
+.scrollbar-hidden:hover::-webkit-scrollbar-track {
+	background: rgb(200 200 200 / 0%);
+	border-radius: 20px;
+}
+
+.scrollbar-hidden:hover::-webkit-scrollbar-thumb {
+	background: rgb(123 122 122);
+	border-radius: 15px;
+}
+
+.scrollbar-custom {
+	-ms-overflow-style: none;
+	scrollbar-width: 7px;
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+	display: none;
+	width: 7px;
+	background-color: transparent;
+}
+.scrollbar-custom::-webkit-scrollbar:hover {
+	display: block;
+	width: 7px;
+	background-color: transparent;
+}
+.scrollbar-custom::-webkit-scrollbar-thumb {
+	display: none;
+	background-color: #9b9b9b;
+	border-radius: 20px;
+}
+.scrollbar-custom:hover::-webkit-scrollbar-thumb {
+	display: block;
+	background-color: #9b9b9b;
+	border-radius: 20px;
+}
+
+.scrollbar-hover::-webkit-scrollbar {
+	display: block;
+	visibility: hidden;
+	width: 5px;
+	height: 5px;
+}
+.scrollbar-hover {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+.scrollbar-hover:hover::-webkit-scrollbar {
+	display: block;
+	height: 5px;
+	cursor: pointer;
+	width: 5px;
+}
+.scrollbar-hover:hover::-webkit-scrollbar-track {
+	background: rgb(200 200 200 / 0%);
+	border-radius: 20px;
+}
+.scrollbar-hover:hover::-webkit-scrollbar-thumb {
+	background: rgb(123 122 122);
+	border-radius: 15px;
+}
+
+.swiper-button-next {
+	background: #fff !important;
+	right: 0 !important;
+	align-items: center !important;
+	border-radius: 50% !important;
+	height: 30px !important;
+	width: 30px !important;
+	top: 29px !important;
+	border: 1px solid !important;
+}
+.swiper-button-prev {
+	background: #fff !important;
+
+	border-radius: 50% !important;
+	height: 30px !important;
+	width: 30px !important;
+	top: 29px !important;
+	border: 1px solid !important;
+	left: 2px !important;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	font-size: 12px !important;
+}
